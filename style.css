@@ -55,8 +55,6 @@
     font-weight: 900;
     transform:translate(5%,-800%);
     font-size:  clamp(11px,2vw,20px);
-
-    /* font-size: 4vw; */
 }
 @media screen and (max-width: 480px){
     .home-u-text-1{
@@ -125,7 +123,9 @@
     font-family: "Capsule Sans Display",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
 }
 
-
+.home-register div:hover{
+    background-color: #00C805;
+}
 
 
  /* ayush */
@@ -208,12 +208,8 @@ a{
     left: 200px;
     display: none;
     justify-self: center;
-    /* background-color: #636963; */
-    /* width: 100%; */
     align-items: end;
     justify-content: flex-end;
-    /* align-content: space-between; */
-    /* flex-direction: row; */
 }
 .nav-menu div{
     /* border: 1px solid; */
@@ -223,7 +219,7 @@ a{
 .nav-menu a {
     color: var(--black);
     cursor: pointer;
-    /* font-size: 2vw; */
+    font-size: 1.3vw;
     /* margin: 0.7rem 1rem 0.4rem; */
     /* font-size: 1.4rem; */
     text-decoration: none;
@@ -233,6 +229,8 @@ a{
     transition: 0.3s ease-in;
     padding: 0.3rem;
   }
+
+  /* media and (width >= ) */
 
 .nav-menu a:hover {
     border-color: var(--primary-color);
@@ -329,14 +327,19 @@ a{
 }
 .HL-box{    
     margin: 10px 0;
+    background-color: #04846204;
     /* border : solid;  */
     /* max-width: 900px; */
     flex-basis: 600px;
     display: grid;
     grid-template-columns: auto auto;
     padding: 4px;
-    justify-content: start;
+    justify-content: start; 
+    border-right: solid #00C805;
 }
+    
+
+
 .HL-icon img{
     width: 50px;
 }
@@ -366,6 +369,8 @@ a{
 .HL-box-L{
     text-align: right;
     justify-content: end;
+    border-left: solid #00C805;
+    border-right: none;
 }
 
 .HL-box-3{width: 100%;display: flex;justify-content: center;}
@@ -452,6 +457,32 @@ a{
   max-width: 800px;
   max-height: auto;    
 }
+
+@media screen and ( width < 1210px){
+
+    .HL-box{
+        padding: 5px 0;
+        background-color: #0484621c;
+    }
+    .HL-box-3{
+        padding: 3% 0;
+    }
+    .HL-head , .HL-para{
+        font-size: smaller;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* about page */
